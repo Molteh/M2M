@@ -1,0 +1,3947 @@
+{ "data": [{
+   "_id":{
+      "$oid":"5e9861d9c5e748db4fbfa97b"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044825761"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hai there"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Need to register to Siirtosoitto"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Ok"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"By accepting terms and condition here are my phone number:123654789 and license plate number:123654789"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Linnansola"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"YDB-671"
+            }
+         ],
+         "template":"terms and conditions are accepted and notification area is Linnansola and License plate is YDB-671",
+         "rewrite":"The licence plate is YDB-671 and accepted the terms and conditions"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Phone number",
+         "rewrite":"please provide phone number."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"040022676"
+            }
+         ],
+         "template":"Phone number is 040022676",
+         "rewrite":": Phone number is 040022676"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"provide the pin code"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"6235"
+               }
+            }
+         ],
+         "template":"Pincode is 6235",
+         "rewrite":"Pincode is 6235"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"You have successfully registered"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"2"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"3"
+      },
+      {
+         "question":"Comment",
+         "answer":"none"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dac5e748db4fbfa97c"
+   },
+   "length":{
+      "$numberInt":"5"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044826153"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hello, I'd like to register to Siirtosoitto"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Of course, please input your phone number, license plates and areas you would like to be notified in and don't forget to accept the terms and conditions!"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"049925805"
+            },
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Marjaniemenranta"
+            }
+         ],
+         "template":"Phone number is 049925805 and terms and conditions are accepted and notification area is Marjaniemenranta",
+         "rewrite":"My phone number is 049925805 and I have accepted the terms and conditions. I'd like to be notified in Marjaniemenranta"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: Phone number",
+         "rewrite":"Sorry, this you put in the wrong data, please input your phone number - thank you."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":"User disconnected."
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"1"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"1"
+      },
+      {
+         "question":"Comment",
+         "answer":"There was no dialogue for the second half"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dac5e748db4fbfa97d"
+   },
+   "length":{
+      "$numberInt":"9"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044826324"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hello. I would like to register."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Okay. Please provide your phone number, license plate number, and sign on the list that you accept the terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"042199349"
+            }
+         ],
+         "template":"terms and conditions are accepted and Phone number is 042199349",
+         "rewrite":"I accept the terms and conditions. My phone number is 042199349."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Please select a pincode for use."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"2321"
+               }
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"XEJ-578"
+            }
+         ],
+         "template":"Pincode is 2321 and License plate is XEJ-578",
+         "rewrite":"My pincode is 2321. My license plate is XEJ-578."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Area",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: notification area",
+         "rewrite":"Please provide the area you will be notified about."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Hepokalliontie"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Rynnästie"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Sippolankuja"
+            }
+         ],
+         "template":"notification area is Hepokalliontie and notification area is Rynnästie and notification area is Sippolankuja",
+         "rewrite":"The areas are Hepokallionie, Rynnastie, and Sippolankuja."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Thank you. Your registration is finished."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":"Thank you. Good bye."
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"2"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"2"
+      },
+      {
+         "question":"Comment",
+         "answer":"no"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dac5e748db4fbfa97e"
+   },
+   "length":{
+      "$numberInt":"17"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044826528"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Good morning!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Good morning. Would you want to registrate to Siirtosoitto?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes I do"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"May I have your phone number, license plate and area of notification? I will also need for you to accept terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Ohrahuudantie"
+            }
+         ],
+         "template":"notification area is Ohrahuudantie",
+         "rewrite":"My notification area is Ohrahuudantie."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Ohrahuhdantie"
+            }
+         ],
+         "template":"ask confirmation for the following: Area is Ohrahuhdantie",
+         "rewrite":"Is the notification area of Ohrahuhdantie confirmed?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Do you accept terms and conditions?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"Yes I accept"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"Please tell me your license plate number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"SMY-576"
+            }
+         ],
+         "template":"License plate is SMY-576",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Phone number",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"042763525"
+            }
+         ],
+         "template":"Phone number is 042763525",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"3195"
+               }
+            }
+         ],
+         "template":"Pincode is 3195",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"4"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"5"
+      },
+      {
+         "question":"Comment",
+         "answer":"Very short time to do the task!"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dac5e748db4fbfa97f"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044826711"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hello, would you like to register to this site?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Please input: Phone number, license plates and the areas which you would like to recieve notifications in. Don't forget to accept the terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"042712584"
+            }
+         ],
+         "template":"terms and conditions are accepted and Phone number is 042712584",
+         "rewrite":"I have accepted the terms and conditions and my Phone number is 042712584"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Please create a pin code."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"7966"
+               }
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Ukkotuomaronkura"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"BXV-477"
+            }
+         ],
+         "template":"Pincode is 7966 and notification area is Ukkotuomaronkura and License plate is BXV-477",
+         "rewrite":"My pincode is 7966 the area I'd like notifications in is Ukkotuomaronkura and my license plate is BXV-477."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Ukkotuomarinkuja"
+            }
+         ],
+         "template":"ask confirmation for the following: Area is Ukkotuomarinkuja",
+         "rewrite":"Is the area you've selected Ukkotuomarinkuja?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Success, your registration is complete!"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"1"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"1"
+      },
+      {
+         "question":"Comment",
+         "answer":"Good task will do more"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dac5e748db4fbfa980"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044826888"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"hi"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"hi, can I register to Siirtosoitto"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"confirm"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"can you give me phone number and license plate and term and condition"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"accept term and condition"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Area",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: notification area",
+         "rewrite":"show me notification area"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Crusellinsilta"
+            }
+         ],
+         "template":"notification area is Crusellinsilta",
+         "rewrite":"crusellinsitta is the notification area"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"give me your license plate number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"KSV-057"
+            }
+         ],
+         "template":"License plate is KSV-057",
+         "rewrite":"license plate number is: KSV-057"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: License plate",
+         "rewrite":"the license plate format is wrong, give me your license plate number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"4"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"2"
+      },
+      {
+         "question":"Comment",
+         "answer":"no further comment"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dbc5e748db4fbfa981"
+   },
+   "length":{
+      "$numberInt":"7"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044827046"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hi!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Greetings! Would you like to register to Siirtositto?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Please provide you phone number and license plate number followed by area where you live and finally acceptance of Terms and Conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"JKL-080"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Käpylänkuja"
+            }
+         ],
+         "template":"License plate is JKL-080 and notification area is Käpylänkuja",
+         "rewrite":"License plate: JKL-080 and notification area is Kapylankuja"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: License plate",
+         "rewrite":"I apologize, it seems your license plate format is wrong."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":"Registration is interrupted."
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"4"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"2"
+      },
+      {
+         "question":"Comment",
+         "answer":"No Comment"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dbc5e748db4fbfa982"
+   },
+   "length":{
+      "$numberInt":"13"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044827250"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hi! I would like to register to this service"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Sure! Tell me your phone number, license plate number and for which areas you want to get notified. Also, please accept terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Vaskikaiconpolku"
+            }
+         ],
+         "template":"notification area is Vaskikaiconpolku",
+         "rewrite":"I am interested in Vaskikaiconpolku."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Vaskikaivonpolku"
+            }
+         ],
+         "template":"ask confirmation for the following: Area is Vaskikaivonpolku",
+         "rewrite":"Is the area Vaskikaivonpolku?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"Please provide license plate number for reference."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"GCP-270"
+            }
+         ],
+         "template":"License plate is GCP-270",
+         "rewrite":"It is GCP-270."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Please accept the terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"040988334"
+            }
+         ],
+         "template":"terms and conditions are accepted and Phone number is 040988334",
+         "rewrite":"I have accepted it. Also my phone number is 040988334."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Please provide Pincode for reference."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"3480"
+               }
+            }
+         ],
+         "template":"Pincode is 3480",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"3"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"3"
+      },
+      {
+         "question":"Comment",
+         "answer":"none"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dbc5e748db4fbfa983"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044827432"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hi! I would like to register to this service"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Sure! Tell me your phone number, license plate number and for which areas you want to get notified. Also, you need to accept terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"nrhotie"
+            },
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"040916864"
+            }
+         ],
+         "template":"notification area is nrhotie and Phone number is 040916864",
+         "rewrite":"it is 040916864 and I am interested in nrhotie."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Terhotie"
+            },
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"ask confirmation for the following: Area is Terhotie and Pincode",
+         "rewrite":"Is the area Terhotie? What is Pincode?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"7550"
+               }
+            }
+         ],
+         "template":"Pincode is 7550",
+         "rewrite":"Pincode is 7550."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Please accept terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"terms and conditions are accepted and format is wrong",
+         "rewrite":"I have accepted it but area of interest is wrong."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"Please provide license plate number for reference."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"YVE-298"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Mustasaarenkuja"
+            }
+         ],
+         "template":"License plate is YVE-298 and notification area is Mustasaarenkuja",
+         "rewrite":"It is YVE-298 and I am interested in Mustasaarenkuja."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Thank you. Your registration is successfully completed."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Seurasaarentie"
+            }
+         ],
+         "template":"notification area is Seurasaarentie",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"4"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"4"
+      },
+      {
+         "question":"Comment",
+         "answer":"NA"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e9861dbc5e748db4fbfa984"
+   },
+   "length":{
+      "$numberInt":"9"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044827602"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hi, would you like to register to this service?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes I would!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Can you provide me with your phone number, license plate and areas of interest? I also need you to accept the terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"047381215"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"HNQ-781"
+            },
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"Phone number is 047381215 and License plate is HNQ-781 and terms and conditions are accepted",
+         "rewrite":"My phone number is 047381215 and my license place is HNQ-781. I also accept the terms and conditions."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Can I please have the pincode?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"8638"
+               }
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Kauppakaarre"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Viitankruununtie"
+            }
+         ],
+         "template":"Pincode is 8638 and notification area is Kauppakaarre and notification area is Viitankruununtie",
+         "rewrite":"Pincode is 8638, and the areas of interest are Kauppakaarre and Viitankruununtie."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Great, your registration is complete!"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":"Thank you, bye!"
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"5"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"5"
+      },
+      {
+         "question":"Comment",
+         "answer":"It was very interesting."
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8b9"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913180"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hi, would you like to register with our service today?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Sure!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Can you please provide us with your phone number, license plate and the areas you want to get notified? I also need you to accept our terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"PCW-283"
+            },
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Ruusutarhantie"
+            }
+         ],
+         "template":"License plate is PCW-283 and terms and conditions are accepted and notification area is Ruusutarhantie",
+         "rewrite":"My license plate number is PCW-283, and I am interested in the area Ruusutarhantie. I also accept the terms and conditions."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Phone number",
+         "rewrite":"Can you provide me your phone number?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"041862673"
+            }
+         ],
+         "template":"Phone number is 041862673",
+         "rewrite":"It is 041862673."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Can you give me the pincode?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"9996"
+               }
+            }
+         ],
+         "template":"Pincode is 9996",
+         "rewrite":"The pincode is 9996."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Thank you! The registration is complete!"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"5"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"6"
+      },
+      {
+         "question":"Comment",
+         "answer":"It was interesting."
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8ba"
+   },
+   "length":{
+      "$numberInt":"13"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913258"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello!"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hello! Please select \"yes\" to register for Siirtosoitto"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Please provide you phone number,  license plates, and area code. Then accept the terms and conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"042730351"
+            }
+         ],
+         "template":"Phone number is 042730351",
+         "rewrite":"Phone number = 042730351"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Please provide pincode"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"7043"
+               }
+            }
+         ],
+         "template":"Pincode is 7043",
+         "rewrite":"7043"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Please accept terms and conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"Accept"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"Please Provide License Plate Number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"LHZ-046"
+            }
+         ],
+         "template":"License plate is LHZ-046",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: License plate",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"3"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"3"
+      },
+      {
+         "question":"Comment",
+         "answer":"dd"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8bb"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913512"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hi can I register"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Can you confirm the numbers"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"044558241"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Soghtlpolku"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Marmoripolku"
+            }
+         ],
+         "template":"Phone number is 044558241 and notification area is Soghtlpolku and notification area is Marmoripolku",
+         "rewrite":"I am interested in Soghtlpolku, my number is 044558241"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            },
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Soihtupolku"
+            }
+         ],
+         "template":"provide reference for: Pincode and ask confirmation for the following: Area is Soihtupolku",
+         "rewrite":"Is this place Soihtupolku"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"confirm"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Can you accept"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"Thank you for verifying terms and conditions"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"I need information on license plate"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"PYI-697"
+            },
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"8848"
+               }
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Hallituskatu"
+            }
+         ],
+         "template":"License plate is PYI-697 and Pincode is 8848 and notification area is Hallituskatu",
+         "rewrite":"Number is  PYI-697  for Hallituskatu"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"You are done"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"5"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"2"
+      },
+      {
+         "question":"Comment",
+         "answer":"none"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8bc"
+   },
+   "length":{
+      "$numberInt":"7"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913603"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hi !"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hello ! Would you like to register ?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Give me your phone number, licence plates and your location. Please accept terms and conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"049129845"
+            }
+         ],
+         "template":"Phone number is 049129845",
+         "rewrite":"My phone number is 049128845"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: Phone number",
+         "rewrite":"Your phone number doesnâ€™t have the good format. Please re-enter your phone number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":"I cancel the registration"
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"1"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"1"
+      },
+      {
+         "question":"Comment",
+         "answer":"No sentences for lasts boxes"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8bd"
+   },
+   "length":{
+      "$numberInt":"13"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913683"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello1"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hello do you want to do the Siirtosoitto registration?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Sure."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Please give your phone number and license plate and accept the terms."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"I accept the terms."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Phone number",
+         "rewrite":"Please provide your phone number."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"041225902"
+            }
+         ],
+         "template":"Phone number is 041225902",
+         "rewrite":"It's 041225902."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Please provide your pincode."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"8092"
+               }
+            }
+         ],
+         "template":"Pincode is 8092",
+         "rewrite":"8092."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"Okay, what is your license plate?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"SVF-052"
+            }
+         ],
+         "template":"License plate is SVF-052",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: License plate",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"6"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"5"
+      },
+      {
+         "question":"Comment",
+         "answer":"You need to provide more time I had to rush through your instructions to be able to complete."
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623164ff304c94ccb8be"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044913843"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"I would like to register"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Tell me your phone number and for which areas you want to get notified"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"PCF-882"
+            },
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"License plate is PCF-882 and terms and conditions are accepted",
+         "rewrite":"This is PCF-882 and accept it"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Area",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: notification area",
+         "rewrite":"Please provide reference notification"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Hallituskatu"
+            }
+         ],
+         "template":"notification area is Hallituskatu",
+         "rewrite":"Notification is Hallituskatu"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Phone number",
+         "rewrite":"Tell me phone number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"042809291"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"TRZ-782"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Strömberginkuja"
+            }
+         ],
+         "template":"Phone number is 042809291 and License plate is TRZ-782 and notification area is Strömberginkuja",
+         "rewrite":"Phone number is 042809291 License is  TRZ-782"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: Pincode",
+         "rewrite":"Provide pincode"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"4770"
+               }
+            }
+         ],
+         "template":"Pincode is 4770",
+         "rewrite":"Pincode is 4770"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Successfully completed."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"no"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"3"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"4"
+      },
+      {
+         "question":"Comment",
+         "answer":"none"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623264ff304c94ccb8bf"
+   },
+   "length":{
+      "$numberInt":"11"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044914037"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hi."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Hello! do you want to register to this service?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Yes, I do."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Please provide your phone number, license plate number and for which areas you want to get notified. Also, please do accept terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"044778609"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"bblio perdepelku"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"SSE-965"
+            }
+         ],
+         "template":"Phone number is 044778609 and notification area is bblio perdepelku and License plate is SSE-965",
+         "rewrite":"Phone number is 044778609 and I am interested in bblio perdepelk. License plate number is SSE-965."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            },
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Talin perhepolku"
+            }
+         ],
+         "template":"provide reference for: Pincode and ask confirmation for the following: Area is Talin perhepolku",
+         "rewrite":"Please provide the area Pincode. Is the area Talin perhepolku?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"2660"
+               }
+            }
+         ],
+         "template":"affirm Pincode is 2660",
+         "rewrite":"Yes it is. Pincode is 2660."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Please accept the terms and condtions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"terms and conditions are accepted",
+         "rewrite":"I have accepted it."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":"Thank you. Your registration is successsful."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"3"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"4"
+      },
+      {
+         "question":"Comment",
+         "answer":"Time is too short. I needed to rush through to complete it before it expires. Thanks."
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623264ff304c94ccb8c0"
+   },
+   "length":{
+      "$numberInt":"5"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044914225"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hi! I would like to register to this service."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Sure! Can you give me your phone number, license plate and areas of acceptance? I also need you to accept the terms and conditions."
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"049366979"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Jalkamyllqnphlku"
+            },
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            }
+         ],
+         "template":"Phone number is 049366979 and notification area is Jalkamyllqnphlku and terms and conditions are accepted",
+         "rewrite":"The phone number is 049366979 and I am interested in the area Jalkamyllqnphlku. I also accept the terms and conditions."
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            },
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Jalkamyllynpolku"
+            }
+         ],
+         "template":"format is wrong, provide reference for: Phone number and ask confirmation for the following: Area is Jalkamyllynpolku",
+         "rewrite":"Unfortunately the format for the phone number is incorrect. Is the area Jalkamyllqnphlku?"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":"It looks like there has been an issue, I will have to get back to you later."
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"6"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"6"
+      },
+      {
+         "question":"Comment",
+         "answer":"It was fun."
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623264ff304c94ccb8c1"
+   },
+   "length":{
+      "$numberInt":"13"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044914442"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"greetings",
+         "rewrite":"Hello"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"propose",
+               "slot":"registration to Siirtosoitto",
+               "value":null
+            }
+         ],
+         "template":"greetings and propose the following: registration to Siirtosoitto",
+         "rewrite":"Register to Slirtosoitto"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"affirm",
+         "rewrite":"Confirm"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"References for phone number and license plates"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"045013377"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"nuvilahdenoatu"
+            }
+         ],
+         "template":"Phone number is 045013377 and notification area is nuvilahdenoatu",
+         "rewrite":"Number is 045013377"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Pincode",
+               "value":null
+            },
+            {
+               "act":"confirm",
+               "slot":"Area",
+               "value":"Suvilahdenkatu"
+            }
+         ],
+         "template":"provide reference for: Pincode and ask confirmation for the following: Area is Suvilahdenkatu",
+         "rewrite":"Pincode and confirmation"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Pincode",
+               "value":{
+                  "$numberInt":"6183"
+               }
+            }
+         ],
+         "template":"affirm Pincode is 6183",
+         "rewrite":"Confirm pincode 6183"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"License plate",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: License plate",
+         "rewrite":"License plate reference"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"XLL-711"
+            }
+         ],
+         "template":"License plate is XLL-711",
+         "rewrite":"XLL-711 license plate"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Accept the conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"waivanvawuctrjankatu"
+            }
+         ],
+         "template":"terms and conditions are accepted and notification area is waivanvawuctrjankatu",
+         "rewrite":""
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"notify success",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Registration",
+               "value":"True"
+            }
+         ],
+         "template":"success! and registration is completed",
+         "rewrite":""
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"bye",
+               "slot":null,
+               "value":null
+            }
+         ],
+         "template":"thank you, bye",
+         "rewrite":""
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"4"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"5"
+      },
+      {
+         "question":"Comment",
+         "answer":"None"
+      }
+   ]
+},{
+   "_id":{
+      "$oid":"5e98623264ff304c94ccb8c2"
+   },
+   "length":{
+      "$numberInt":"7"
+   },
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1587044914598"
+      }
+   },
+   "annotatedMessages":[
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"greeting",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"inform",
+               "slot":"Intent",
+               "value":"register"
+            }
+         ],
+         "template":"greetings and register to Siirtosoitto",
+         "rewrite":"Hi! I would like to register for Siirtosoitto"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"affirm",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"phone number",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"license plates",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"areas",
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"acceptance of terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"affirm and provide reference for: phone number and license plates and areas and acceptance of terms and conditions",
+         "rewrite":"Sure! Please tell me your phone number and license plate and please accept the terms and conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"PUU-817"
+            },
+            {
+               "act":"inform",
+               "slot":"Area",
+               "value":"Köysikuja"
+            },
+            {
+               "act":"inform",
+               "slot":"License plate",
+               "value":"UTW-323"
+            }
+         ],
+         "template":"License plate is PUU-817 and notification area is Köysikuja and License plate is UTW-323",
+         "rewrite":"The license plate are PUU-817 and UTW-323 and the notification area is KÃ¶ysikuja"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"request",
+               "slot":"Terms and conditions",
+               "value":null
+            }
+         ],
+         "template":"provide reference for: acceptance of terms and conditions",
+         "rewrite":"Please accept the terms and conditions"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"Terms and conditions",
+               "value":true
+            },
+            {
+               "act":"inform",
+               "slot":"Phone number",
+               "value":"049149473"
+            }
+         ],
+         "template":"terms and conditions are accepted and Phone number is 049149473",
+         "rewrite":"I accept the terms and conditions and my phone number is 049149473"
+      },
+      {
+         "sender":"Chatbot",
+         "annotations":[
+            {
+               "act":"negate",
+               "slot":null,
+               "value":null
+            },
+            {
+               "act":"request",
+               "slot":"Phone number",
+               "value":null
+            }
+         ],
+         "template":"format is wrong, provide reference for: Phone number",
+         "rewrite":"sorry but your input is in incorrect format, please provide your phone number"
+      },
+      {
+         "sender":"User",
+         "annotations":[
+            {
+               "act":"inform",
+               "slot":"registration",
+               "value":"interrupted"
+            }
+         ],
+         "template":"registration is interrupted",
+         "rewrite":"Please stop the registration"
+      }
+   ],
+   "processed":true,
+   "assigned":false,
+   "feedback":[
+      {
+         "question":"Does it seem like a conversation between a user that sounds like you and a chatbot that sounds formal?",
+         "answer":"yes"
+      },
+      {
+         "question":"How long do you think the task was",
+         "answer":"2"
+      },
+      {
+         "question":"Did you feel frustrated while doing the task",
+         "answer":"5"
+      },
+      {
+         "question":"Comment",
+         "answer":"The ending doesn't really make sense."
+      }
+   ]
+}
+]}

@@ -1,0 +1,10 @@
+! version = 2.0
+
+// universal catch when the bot does not understand what the user wants
+
++ *
+- Sorry, at the moment the bot is only used to carry out an experimental task with selected users. If you want to help improving the chatbot\n
+^ write "start experiment"
+
+
+
